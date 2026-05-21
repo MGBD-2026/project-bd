@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_initial_data
+      author: JSA
+      changes:
+        - sqlFile:
+            path: 001_initial_data.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/02_dml/00_inserts/001_initial_data.rollback.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+
+  - changeSet:
+      id: 002_volumetric_data
+      author: JSA
+      changes:
+        - sqlFile:
+            path: 002_volumetric_data.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/02_dml/00_inserts/002_volumetric_data.rollback.sql
+            relativeToChangelogFile: true
+            splitStatements: true

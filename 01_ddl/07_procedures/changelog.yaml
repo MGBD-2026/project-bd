@@ -1,0 +1,14 @@
+databaseChangeLog:
+  - changeSet:
+      id: 001_gestion_pedidos_procedures
+      author: JSA
+      changes:
+        - sqlFile:
+            path: 001_gestion_pedidos_procedures.sql
+            relativeToChangelogFile: true
+            splitStatements: false
+      rollback:
+        - sqlFile:
+            path: ../../../05_rollbacks/01_ddl/07_procedures/001_gestion_pedidos_procedures.rollback.sql
+            relativeToChangelogFile: true
+            splitStatements: true
