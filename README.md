@@ -2,6 +2,18 @@
 
 Base de datos para el sistema de comercio electrónico de accesorios DM, gestionada con Liquibase y PostgreSQL.
 
+## Información del proyecto
+
+| Campo              | Valor                                                        |
+|--------------------|--------------------------------------------------------------|
+| Asignatura         | Modelado y Gestión de Base de Datos                         |
+| Integrante         | Sergio Losada                                                |
+| Rol                | Arquitecto de BD — DDL, DML, migraciones Liquibase, Docker  |
+| Organización       | [MGBD-2026](https://github.com/MGBD-2026)                   |
+| Repositorio BD     | [MGBD-2026/project-bd](https://github.com/MGBD-2026/project-bd) |
+| Repositorio docs   | [MGBD-2026/project-docs](https://github.com/MGBD-2026/project-docs) |
+| Profesor / revisor | `ariel5253`                                                  |
+
 ## Alcance Actual
 
 Este repositorio administra toda la estructura de la base de datos del proyecto:

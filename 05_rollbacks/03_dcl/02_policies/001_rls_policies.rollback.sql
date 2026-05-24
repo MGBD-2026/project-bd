@@ -40,8 +40,14 @@ ALTER TABLE ventas.detalle_pedido DISABLE ROW LEVEL SECURITY;
 ALTER TABLE ventas.carrito DISABLE ROW LEVEL SECURITY;
 ALTER TABLE ventas.item_carrito DISABLE ROW LEVEL SECURITY;
 
--- Eliminar roles (opcional)
--- DROP ROLE IF EXISTS app_admin;
--- DROP ROLE IF EXISTS app_vendedor;
--- DROP ROLE IF EXISTS app_cliente;
--- DROP ROLE IF EXISTS app_bodeguero;
+-- Revocar todos los privilegios de los roles antes de eliminarlos
+DROP OWNED BY app_admin;
+DROP OWNED BY app_vendedor;
+DROP OWNED BY app_cliente;
+DROP OWNED BY app_bodeguero;
+
+-- Eliminar roles de base de datos creados por este changeset
+DROP ROLE IF EXISTS app_admin;
+DROP ROLE IF EXISTS app_vendedor;
+DROP ROLE IF EXISTS app_cliente;
+DROP ROLE IF EXISTS app_bodeguero;

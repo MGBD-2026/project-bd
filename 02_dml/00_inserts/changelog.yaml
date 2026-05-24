@@ -9,7 +9,7 @@ databaseChangeLog:
             splitStatements: true
       rollback:
         - sqlFile:
-            path: ../../../05_rollbacks/02_dml/00_inserts/001_initial_data.rollback.sql
+            path: ../../05_rollbacks/02_dml/00_inserts/001_initial_data.rollback.sql
             relativeToChangelogFile: true
             splitStatements: true
 
@@ -23,6 +23,6 @@ databaseChangeLog:
             splitStatements: true
       rollback:
         - sqlFile:
-            path: ../../../05_rollbacks/02_dml/00_inserts/002_volumetric_data.rollback.sql
+            path: ../../05_rollbacks/02_dml/00_inserts/002_volumetric_data.rollback.sql
             relativeToChangelogFile: true
             splitStatements: true

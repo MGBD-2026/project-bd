@@ -32,7 +32,7 @@ services:
       --url=jdbc:postgresql://postgres:5432/accesorios_dm_db
       --username=admin
       --password=admin123
-      --changelog-file=changelog-master.yaml
+      --changelog-file=./changelog-master.yaml
     networks:
       - accesorios-network-dev
 

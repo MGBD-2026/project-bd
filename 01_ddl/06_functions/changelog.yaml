@@ -9,6 +9,6 @@ databaseChangeLog:
             splitStatements: false
       rollback:
         - sqlFile:
-            path: ../../../05_rollbacks/01_ddl/06_functions/001_update_stock_functions.rollback.sql
+            path: ../../05_rollbacks/01_ddl/06_functions/001_update_stock_functions.rollback.sql
             relativeToChangelogFile: true
             splitStatements: false

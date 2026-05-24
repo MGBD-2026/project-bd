@@ -9,6 +9,6 @@ databaseChangeLog:
             splitStatements: true
       rollback:
         - sqlFile:
-            path: ../../../05_rollbacks/01_ddl/04_views/001_report_views.rollback.sql
+            path: ../../05_rollbacks/01_ddl/04_views/001_report_views.rollback.sql
             relativeToChangelogFile: true
             splitStatements: true
